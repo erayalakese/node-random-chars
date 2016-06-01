@@ -1,0 +1,30 @@
+{
+  "name": "node-random-chars",
+  "version": "1.0.0",
+  "description": "Creates random alphanumeric hash strings with given length",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erayalakese/node-random-chars.git"
+  },
+  "keywords": [
+    "random",
+    "character",
+    "string",
+    "hash",
+    "generator"
+  ],
+  "author": "erayalakese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erayalakese/node-random-chars/issues"
+  },
+  "homepage": "https://github.com/erayalakese/node-random-chars#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
