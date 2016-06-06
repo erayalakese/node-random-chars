@@ -6,7 +6,7 @@ function generateHash(len) {
 
 module.exports = {
   create : function(len) {
-    return generateRandomAlphaNum(len);
+    return generateHash(len);
   },
   c : function(len) {
     return module.exports.create(len);
