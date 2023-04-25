@@ -1,7 +1,17 @@
+const crypto = require('crypto');
+
 function generateHash(len) {
-    var hash = "";
-    for(; hash.length < len; hash  += Math.random().toString(36).substr(2));
-    return hash.substr(0, len);
+    const charSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+    const charSetLength = charSet.length;
+    let hash = '';
+
+    for (let i = 0; i < len; i++) {
+        const randomBuffer = crypto.randomBytes(1);
+        const randomIndex = randomBuffer[0] % charSetLength;
+        hash += charSet[randomIndex];
+    }
+
+    return hash;
 }
 
 module.exports = {
